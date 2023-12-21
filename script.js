@@ -16,9 +16,12 @@ const countdownFunction = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the countdown in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Display the countdown in separate elements for days, hours, minutes, and seconds
+document.getElementById("days").innerHTML = days + "d";
+document.getElementById("hours").innerHTML = hours + "h";
+document.getElementById("minutes").innerHTML = minutes + "m";
+document.getElementById("seconds").innerHTML = seconds + "s";
+
 
   // If the countdown is over, display a message
   if (distance < 0) {
