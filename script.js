@@ -17,15 +17,18 @@ const countdownFunction = setInterval(function() {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the countdown in separate elements for days, hours, minutes, and seconds
-document.getElementById("days").innerHTML = days + "d";
-document.getElementById("hours").innerHTML = hours + "h";
-document.getElementById("minutes").innerHTML = minutes + "m";
-document.getElementById("seconds").innerHTML = seconds + "s";
-
+  document.getElementById("days").innerHTML = days + "d";
+  document.getElementById("hours").innerHTML = hours + "h";
+  document.getElementById("minutes").innerHTML = minutes + "m";
+  document.getElementById("seconds").innerHTML = seconds + "s";
 
   // If the countdown is over, display a message
   if (distance < 0) {
     clearInterval(countdownFunction);
+    document.getElementById("days").innerHTML = "0d";
+    document.getElementById("hours").innerHTML = "0h";
+    document.getElementById("minutes").innerHTML = "0m";
+    document.getElementById("seconds").innerHTML = "0s";
     document.getElementById("countdown").innerHTML = "HAPPY NEW YEAR!";
   }
 }, 1000);
