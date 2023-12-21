@@ -5,12 +5,14 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url('Background.jpeg'); /* Passe den Dateipfad an */
+  background-image: url('Background.jpeg');
   background-size: cover;
   background-position: center;
+  overflow: hidden; /* Deaktiviert das Scrollen */
 }
 
 .countdown {
   text-align: center;
-  color: white; /* Textfarbe anpassen */
+  color: white;
+  font-size: 3em; /* Ändere die Schriftgröße nach Bedarf */
 }
