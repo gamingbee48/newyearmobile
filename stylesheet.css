@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('Background.jpeg'); /* Passe den Dateipfad an */
+  background-size: cover;
+  background-position: center;
+}
+
+.countdown {
+  text-align: center;
+  color: white; /* Textfarbe anpassen */
+}
